@@ -1,13 +1,13 @@
-# edit path
-# must be in the path with parse_absrel_results.txt and json files
-
-setwd("/path/to/your/working/directory")
+setwd <- getwd()
 options("scipen"=0, "digits"=6)
-file <- read.table("genename")
-genevec <- vector()
-genevec <- file$V1
-data.table::fwrite(list(genevec), file = "output", append = TRUE)
-write.table(output, file = "output", append = TRUE, row.names = FALSE, col.names = FALSE)
-rm(genevec)
-rm(file)
+file1 <- paste(readLines("genename"), collapse=" ")
+file2 <- paste(readLines("branchid"), collapse=" ")
 
+genedt <- data.table::data.table(gene = character(1L), branch = character(1L))
+genedt$gene[1] <- file1
+genedt$branch[1] <- file2
+print(genedt)
+write.table(genedt, file = "output", append = TRUE, row.names = FALSE, col.names = FALSE, quote = FALSE)
+write.table(output, file = "output", append = TRUE, row.names = FALSE, col.names = FALSE, quote = FALSE)
+rm(genedt)
+rm(file1,file2)
