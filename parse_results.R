@@ -7,7 +7,7 @@ require(jsonlite)
 
 # remember to replace Inf values with "Inf" using
 # sed -i 's/inf/"inf"/'
-setwd("C:/Users/tjarva/parse_absREL_json/")
+setwd("C:/Users/path/to/json/files"")
 
 
 files <- list.files(full.names = TRUE, pattern = '*.json$')
