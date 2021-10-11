@@ -7,7 +7,6 @@ require(jsonlite)
 
 # remember to replace Inf values with "Inf" using
 # sed -i 's/inf/"inf"/'
-# run using <Rscript parse_results.R>
 setwd("C:/Users/tjarva/parse_absREL_json/")
 
 
