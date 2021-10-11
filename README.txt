@@ -9,8 +9,10 @@ mygene  branchname  0.04     0.97          1      0.01          100     0.02
 
 
 In order for the script to work, all json files you desire to parse must be in your set working directory (you can modify this
-in the script. The program will automatically detect and store the json files as its input and loop through each. 
+in the script <setwd("C:/Users/path/to/json/files")>. The program will automatically detect and store the json files as its input and loop through each. 
+If the names of your json files are not simply a name followed by .json, for example, if you have something like "name.pal.ABSREL.json"
+you should modify the <string <- "pal.ABSREL.json"> line to reflect your file extension. It is important to note that the file *must* end with ".json" and no other extension (i.e. not ".json.txt").  
 
-If you wish to turn off the printing of the column names before each new loop iteration, simply change "col.names = TRUE" to "col.names = FALSE" 
+If you wish to turn off printing of the column names before each new loop iteration, simply change "col.names = TRUE" to "col.names = FALSE" 
 in the write.table() function.
 
