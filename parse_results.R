@@ -11,7 +11,7 @@ require(jsonlite)
 # run using <Rscript parse_results.R>
 #setwd("C:/Users/path/to/json/files")
 =======
-setwd("C:/Users/path/to/json/files"")
+setwd("C:/Users/path/to/json/files")
 >>>>>>> eb9498e6f6fb1967fb11bff82076be6e46ae536a
 
 
